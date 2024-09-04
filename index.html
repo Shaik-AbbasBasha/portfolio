@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shaik Abbas Basha</title>
+        <link rel="icon" type="image/icon" href="resources/favicon/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="resources/logo/logo.png" class="logo"></img>
+
+                    <ul id="sidemenu">
+                        <li><a href="#header">      Home       </a></li>
+                        <li><a href="#about">       About      </a></li>
+                        <li><a href="#Experience">  Experience </a></li>
+                        <li><a href="#Skills">      MySkills   </a></li>
+                        <li><a href="#Gallery">     Gallery    </a></li>
+                        <li><a href="#location">    Location   </a></li>
+                        <li><a href="#contact">     Contact    </a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Tech Fanatic</p>
+                    <h1>Hi, I'm <span>Abbas</span><br>Basha from India</h1>
+                </div>
+            </div>
+        </div>
+    <!-- ----------ABOUT---------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="resources/about.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <br>
+                        <p> I am Shaik.Abbas Basha and I am 21 years young. I Belong to Guntur, currently residing in Macherla. I
+                            am pursuing My Bachelor's Degree in Computer Science Engineering from Gitam University in
+                            Visakhapatnam.</p>
+                        <br>
+
+                        <p> I have a keen knowledge of current technologies that we use in our day-to-day lives. I have a
+                            good understanding of web development, programming languages, and database management systems
+                            (DBMS). Currently, I am expanding my knowledge in cybersecurity. I have completed 2 major
+                            projects and 1 mini-project that showcases my skills. My latest project focused on data
+                            protection and information preservation using homomorphic encryption.</p>
+                        <br>
+
+                        <p id="readMoreText" style="display:none;">I am a quick learner, and problem solver quickly
+                            identifying and addressing challenges with a positive attitude. Life's journey has been both
+                            challenging and fulfilling, driving me towards continuous growth and self-discovery, I'm
+                            trying to expand my array of interests as much as possible.
+                            <br><br><i><b>Excellence is a journey, not a destination and the finish line is where the
+                            journey begins.</i></b><br><br></p>
+
+                        <p id="readLessText" style="display:none;"><a href="#" onclick="toggleReadMore(event)">Read Less</a>
+                        </p>
+
+                        <p id="readMoreLink"><a href="#" onclick="toggleReadMore(event)">Read More</a></p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link"onclick="openTab('skills')">      Skills</p>
+                            <p class="tab-links"            onclick="openTab('experience')">  Experiences</p>
+                            <p class="tab-links"            onclick="openTab('education')">   Education</p>
+                            <p class="tab-links"            onclick="openTab('hobbies')">     Hobbies</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Language  </span><br><br>Python || Java || C || C++</li>
+                                <li><span>Data management       </span><br><br>Microsoft Excel || Google Sheets || MySQL || Data Presentation</li>
+                                <li><span>Web Development       </span><br><br>HTML5 & CSS || Git & GitHub || JavaScript</li>
+                                <li><span>CyberSecurity         </span><br><br>Information Security || Cryptography</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            
+                                <ul>
+                                    <li><span>2024 - May</span><br><br>CXR AR & VR Internship || Intern</li>
+                                    <li><span>2024 - Jan</span><br><br>Participant in the EduYouth Meet in Vizag</li>
+                                    <li><span>2023 - Dec</span><br><br>INTRAINZ Web Development Internship || Intern</li>
+                                </ul>
+
+                        </div>
+
+                        <div class="tab-contents" id="education">
+
+                            <ul>
+                                <li><span>2022 - Present </span><br><br>Bachelor's Degree in Computer Science Engineering<br>from Gitam University, Visakhapatnam</li>
+                                <li><span>2019 - 2022    </span><br><br>Class XII/Diploma <br>from Guntur Engineering College, Guntur. </li>
+                                <li><span>2019           </span><br><br>Class X/SSC       <br>from Vikas High School,Piduguralla.      </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="tab-contents" id="hobbies">
+                            <ul>
+
+                                <li><span>Reading & Writing</span><br><br>Newspaper || Books || Coding.</li>
+                                <li><span>Sports & Fitness</span><br><br> Cricket || Meditation || Physical Workout</li>
+                                <li><span>Traveling</span><br><br>Exploring New Places || Tradition || Culture || Food</li>
+                                
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <!-- ----------Experience---------- -->
+        <div id="Experience">
+            <div class="container">
+                <h1 class="sub-title">
+                    <center>My Experience</center>
+                </h1>
+                <div class="services-list">
+                    <div>
+                        <center><i class="fa-solid fa-code"></i></center>
+                        <center><h2><b>Web Development</b></h2></center>
+                        <p>As a web developer, I have experience in creating static websites and am currently progressing
+                            towards
+                            developing dynamic websites. I possess knowledge of HTML5, CSS, and JavaScript within this
+                            domain.</p>
+                    </div>
+                    <div>
+                        <center><i class="fa-solid fa-keyboard"></i></center>
+                        <center><h2><b>Programming</b></h2></center>
+                        <p>In programming, I possess knowledge of C, Java, Python and I utilize these languages to solve
+                            various problems. In this field, I am well-versed in data structures, optimal programming, and
+                            profiling algorithms.</p>
+                    </div>
+                    <div>
+                        <center><i class="fa-solid fa-lock"></i></center>
+                        <center><h2><b>Cybersecurity</b></h2></center>
+                        <p>I have embarked on a journey to learn ethical hacking, acquiring a fundamental understanding of
+                            Cybersecurity.
+                            I am currently in the process of learning Cybersecurity tools and Kali Linux, which will aid in
+                            enhancing my penetration
+                            testing and vulnerability assessment skills.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!------------Skills---------- -->
+        <div id="Skills">
+                <div class="skills">
+                        <h1 class="sub-title">
+                            <center>MY SKILLS</center>
+                        </h1>
+                        <br>
+                        <br>
+                    <div class="scroll" style="--time:20s">
+                            <div>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Data Analysis</span>
+                                <span>Data Presentation</span>
+                                <span>Problem Solving</span>
+                                <span>JAVA</span>
+
+                                <span>Linux</span>
+                                <span>C++</span>
+                                <span>PYTHON</span>
+                                <span>MySQL</span>
+                                <span>Microsoft Excel</span>
+                                <span>Networking(Beginner)</span>
+                                <span>Security Protocols</span>
+                                <span>Windows</span>
+                            </div>
+                    </div>
+
+                    <div class="scroll" style="--time:23s">
+                            <div>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Data Analysis</span>
+                                <span>Data Presentation</span>
+                                <span>Problem Solving</span>
+                                <span>JAVA</span>
+                                <span>Linux</span>
+                                <span>C++</span>
+                                <span>PYTHON</span>
+                                <span>MySQL</span>
+                                <span>Microsoft Excel</span>
+                                <span>Networking (Beginner)</span>
+                                <span>Security Protocols</span>
+                                <span>Windows</span>
+                            </div>
+                    </div>
+
+                    <div class="scroll" style="--time:20s">
+                        <div>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Data Analysis</span>
+                                <span>Data Presentation</span>
+                                <span>Problem Solving</span>
+                                <span>JAVA</span>
+
+                                <span>Linux</span>
+                                <span>C++</span>
+                                <span>PYTHON</span>
+                                <span>MySQL</span>
+                                <span>Microsoft Excel</span>
+                                <span>Networking (Beginner)</span>
+                                <span>Security Protocols</span>
+                                <span>Windows</span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    <!-- ----------Gallery--------- -->
+        <div id="Gallery">
+            <div class="container">
+                <h1 class="sub-title">
+                    <center>My Gallery</center>
+                </h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="resources/gallary/4.jpg" alt="">
+                        <div class="">
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="resources/gallary/2.jpg" alt="">
+                        <div class="">
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="resources/gallary/7.jpg" alt="">
+                        <div class="">
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="resources/gallary/6.jpg" alt="">
+                        <div class="">
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="resources/gallary/3.jpg" alt="">
+                        <div class="">
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="resources/gallary/8.jpg" alt="">
+                        <div class="">
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="resources/gallary/5.jpg" alt="">
+                        <div class="">
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="resources/gallary/1.jpg" alt="">
+                        <div class="">
+                        </div>
+                    </div>
+                </div>
+                <a href="blank" class="btn btn-show-more">Show More</a>
+                <a href="blank" class="btn btn-show-less">Show Less</a>
+            </div>
+        </div>
+        
+    <!-- ----------LOCATION---------- -->
+        <div id="location" class='container'>
+            <h1 class="sub-title">
+                <center>My Location</center>
+            </h1>
+            <br>
+            <br>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d349.85274486613633!2d83.3784730317279!3d17.78375253948253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395b029a1ce195%3A0x4a6c2459ef50538e!2sQ9MH%2BFHP%2C%20Endada%20Rushikonda%20Rd%2C%20Rushikonda%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%20530045!5e0!3m2!1sen!2sin!4v1708098942980!5m2!1sen!2sin"
+                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0">
+                </iframe>
+
+            </div>
+            <br>
+            <div class='container'>
+                <p>
+                    <center> 
+                        <div class="loader"></div> <br> Rabindranath Tagore Sadan, GITAM
+                        University<br>Visakhapatnam, Andhra Pradesh - 530045</center>
+                </p>
+            </div>
+        </div>
+
+    <!-- ----------CONTACT---------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i>shaikabbasbasha192@gmail.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i> +91 8179590170</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/Shaik-AbbasBasha"                        target="_blank"><i class="fab fa-github">         </i></a>
+                            <a href="https://www.linkedin.com/in/shaik-abbas-basha-8197831bb/"   target="_blank"><i class="fab fa-linkedin">       </i></a>
+                            <a href="https://x.com/SHAIKABBAS51801"                              target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/abbas_basha786/?hl=en"            target="_blank"><i class="fa fa-instagram">       </i></a>
+                        </div>
+                        <a href="resources/cv/Resume.pdf" download class="btn btn2">Download My Resume</a>
+                    </div>
+                    <div class="contact-right">
+
+                        <form name="submit-to-google-sheet">
+                            <input     type="text"   name="Name"  placeholder="Your Name"  required>
+                            <input     type="email"  name="Email" placeholder="Your Email" required>
+                            <textarea  name="Message"rows="6"     placeholder="Your Message"></textarea>
+                            <button    type="submit" class="btn btn3"> Submit </button>
+                        </form>
+
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Made with <i class="fas fa-heart"></i> by Me. All rights reserved..</p>
+            </div>
+        </div>
+
+    </body>
+</html>
